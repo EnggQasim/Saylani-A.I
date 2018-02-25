@@ -1,0 +1,42 @@
+Linux Book commands
+1) uptime
+19:26 up 29 days, 1:39, 2 users, load averages: 1.32 1.36 1.34
+2) uname -svr
+uname is the command to show the operating system name. –s (print the
+operating system name), -r (print the operating system release), and –v (print
+the operating system version) are options that you can use for the uname
+command. In the particular example, we want to use all three so we put n –
+srv to simplify. If we want to display the results as if we used all the options,
+we can use the -a option.
+
+3) Top-Level
+Directory
+Files that the directory contains
+/ Single root directory – file system base
+/bin Executable files such as Linux commands cat,cp,ls
+/boot Files that the boot loaders access during start-up –
+including the Linux kernel
+/dev Files for the different hardware/devices
+/etc. Initialization scripts and system config files
+/home User directories
+/lib Library files which includes driver modules
+/lost+found For lost files
+/media Mounting removal media filesystems
+/mnt Temporary directory for mounted filesystems
+/opt For storing application packages
+/proc Information on Linux processes
+/root Root user home directory
+/sbin Executable files for commands used by root user
+/srv For services hosted by the system (e.g. FTP, web)
+/tmp Temporary directory – deleted during system reboot
+/usr Contains subdirectories for program files
+/var Log files
+Table 4: Linux Top-level Directories
+To navigate in the directories on Linux, you can eith
+
+1) pwd (present working directory)
+2) ls (list)
+3) clear(clear terminal text)
+4) cd <directoryName> (change directory)
+	cd .. (back one directory location)
+	cd / (root directory)

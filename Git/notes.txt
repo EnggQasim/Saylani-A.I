@@ -1,0 +1,86 @@
+Chapter1:
+$ git config --global user.name “John Doe”
+$ git config --global user.email “john@doe.org”
+$ git config --global color.ui auto
+
+$ cd <path/to/project/folder>
+$ git init
+
+$ ls -la
+
+git add -A
+$ git commit -m “Initial commit"
+
+$ cd your/development/folder/
+$ git clone https://github.com/gittower/git-crash-course.git
+
+$ git status
+
+$ git add new-page.html index.html css/*
+
+$ git commit -m “Implement the new login box”
+
+$ git log
+
+==========Chapter2
+$ git branch contact-form
+
+$ git branch -v
+
+$ git status
+
+$ git stash
+
+$ git status
+
+$ git stash list
+
+$ git checkout contact-form
+
+$ git add contact.html
+
+$ git commit -m "Add new contact form"
+
+$ git log
+
+$ git checkout master
+$ git log
+
+$ git checkout master
+$ git merge contact-form
+
+$ git log
+
+=================Chapter#3
+$ git remote add origin https://github.com/EnggQasim/test1.git
+
+$ git remote -v
+
+$ git branch -va
+
+$ git fetch origin master
+
+$ git fetch origin
+$ git log origin/master
+
+$ git pull
+
+$ git checkout <branchName>
+
+$ git push -u origin <branchName>
+
+$ git branch -vva
+
+$ git branch -d <branchName>
+
+$ git branch -dr origin/<branchName>
+
+git remote add origin 
+git remote add origin <"clone"> -f
+git push origin master              OR          git push origin master -f
+git clone repoName
+git pull origin master
+
+git push -u origin <branch> -f (push local brach on server)
+git push --all -u (push all things on remote server)
+git pull --all (pull all data from server)
