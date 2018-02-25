@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+{% if request.method=='GET' %}
+    <form method="POST">
+    <h1>Add Student Entery</h1>
+    <input type="text" name="user" placeholder="User">
+    <input type="password" name="pass" placeholder="Password">
+    <input type="submit" value="Save">
+    </form>
+{% elif ok %}
+    <h1>Add Data in MongoDb Database</h1>
+{% endif %}
