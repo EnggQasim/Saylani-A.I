@@ -1,4 +1,5 @@
 # Preface
+## [learn quickly ClickMe!](./allPandasBasics.ipynb)
 This book is about learning to use pandas, an open source library for Python, which
 was created to enable Python to easily manipulate and perform powerful statistical
 and mathematical analyses on tabular and multidimensional datasets. The design of
