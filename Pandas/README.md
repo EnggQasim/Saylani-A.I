@@ -22,7 +22,7 @@ analyses used to demonstrate derivation of useful results. This will include the
 loading and saving of data from resources that are local and Internet-based and
 creating effective data visualizations that provide instant ability to visually realize
 insights into the meaning previously hidden within complex data.
-<img src="images/pandas.jpg">
+<img src="images/panda.jpg">
 # What this covers
 - `Chapter 1`, A Tour of pandas, is a hands-on introduction to the key features of pandas.
 It will give you a broad overview of the types of data tasks that can be performed
