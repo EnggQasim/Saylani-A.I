@@ -1,0 +1,6 @@
+Derivative:
+	1) Derivative me hum ek variable me dosry variable k hissab sy chane malum krty hain.
+	velocity = distance / time (change in distance with respect to time)
+	2) derivative jb hum nikalty hain tou humy slope milta hai.(slope=gradient)
+Q1) how to find out gradient?
+Now let's have a look with image examples.
