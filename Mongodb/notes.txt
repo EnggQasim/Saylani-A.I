@@ -1,0 +1,47 @@
+MongoDB Download
+https://ww.mongodb.com
+
+c:\mongodb\bin>mongod --directoryperdb --dbpath c:\mongodb\data\db --logpath c:\monogdb\log\mongo.log --logappend --rest --install
+
+2) net start MongoDB
+3) mongo
+4)show dbs
+5) use mycustomers
+6) db
+7)
+db.createUser({
+  user: "brad",
+  pwd: "123",
+  roles: ["readWrite", "dbAdmin"]
+});
+
+8) db.createCollection('customers');
+9) show collections
+10) db.customers.insert({
+first_name :"qasim",
+last_name:"Qasim"
+});
+
+db.customers.insert([{first_name:'asif'},{first_name:'junaid', gender: 'male'}]);
+11) db.customers.find();
+12) db.customers.find().pretty();
+13) db.customers.update({first_name: 'qasim'},{first_name:'hamza'});
+14) db.customers.update({first_name: 'qasim'},{$set(gender: "male",age:35)});
+db.customers.update({first_name: 'qasim'},{$inc:{age:5}});
+db.customers.update({first_name: 'qasim'},{$unset:{age:1}});
+db.customers.update({first_name: 'asif'},{first_name:'Asif',lastName: 'Khan'});
+db.customers.update({first_name: 'qasim'},{$rename:{"gender":"sex"}});
+
+db.customers.remove({first_name:'asif'},{justOne:true});
+
+15) db.customers.find({first_name:'qasim'});
+16) db.customers.find({$or:[{first_name:'qasim'},{age:35}]});
+17) db.customers.find({age:{$lt:40}});
+18) db.customers.finde({"address.city":"karachi"});
+19) db.customers.find().sort({last_name:1});
+ db.customers.find().sort({last_name:-1});
+20) db.customers.find().count();
+21) db.customers.find({gender:"male"}).count();
+22) db.customers.find().limit(4).sort({last_name:1});
+
+23) db.customers.find()forEach(function(doc){print("customer Name:"+doc.first_name)});
