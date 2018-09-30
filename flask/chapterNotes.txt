@@ -1,0 +1,59 @@
+============Chapter#2==========
+1) pip install flask-bootstrap
+from flask_bootstrap import Bootstrap
+# ...
+bootstrap = Bootstrap(app)
+
+{% block head %}
+{{ super() }}
+{% extends "bootstrap/base.html" %}
+{% block title %}Flasky{% endblock %}
+{% endblock %}
+{% block navbar %}
+
+{% endblock %}
+{% block content %}
+{% endblock %}
+
+2) $ pip install flask-moment (working with date and time)
+from flask_moment import Moment
+moment = Moment(app)
+Example 3-12. templates/base.html: importing the Moment.js library
+{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
+{% endblock %}
+
+3)  $ pip install flask-wtf
+Example 4-2. hello.py: form class definition
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
+class NameForm(FlaskForm):
+name = StringField('What is your name?', validators=[DataRequired()])
+submit = SubmitField('Submit')
+
+4) $ pip install flask-sqlalchemy
+Example 5-1. hello.py: database configuration
+import os
+from flask_sqlalchemy import SQLAlchemy
+basedir = os.path.abspath(os.path.dirname(__file__))
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] =\
+'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
+
+Example 5-2. hello.py: Role and User model definition
+class Role(db.Model):
+__tablename__ = 'roles'
+id = db.Column(db.Integer, primary_key=True)
+name = db.Column(db.String(64), unique=True)
+def __repr__(self):
+return '<Role %r>' % self.name
+class User(db.Model):
+__tablename__ = 'users'
+id = db.Column(db.Integer, primary_key=True)
+username = db.Column(db.String(64), unique=True, index=True)
+def __repr__(self):
+return '<User %r>' % self.username
