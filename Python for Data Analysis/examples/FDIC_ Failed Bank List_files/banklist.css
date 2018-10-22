@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+
+p.small_screen_warning
+{
+	display:none;
+	padding:5px;
+	border:2px solid blue;
+	color:blue;
+	font-weight:blue;
+	text-align:center;
+}
+
+
+mark {
+  padding: 0;
+  background: #f1c40f;
+}
+
+a.data
+{
+	float:right;
+	display:block;
+	
+}
+
+div.table_wrapper { clear:both;}
+
+div.table_wrapper h3 
+{
+	border-top:2px solid #036;
+}
+
+table
+{
+	clear:both;
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width:100%;
+	text-align: left;
+}
+table thead tr th, table tfoot tr th {
+	background-color: #003366;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+    color: white;
+	padding: 10px 10px 5px 15px;
+	cursor: pointer;
+	text-align:left;
+
+
+}
+tfoot input {
+
+        box-sizing: border-box;
+		color:#000;
+		width:inherit;
+
+
+    }
+
+div.failed_bank_list div.table_wrapper table tr th.sorting
+{
+	
+	font-weight:bold;
+	background-image: url("images/sort.gif");
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	
+	
+}
+
+
+
+table tr td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+ tr.odd td {
+	background-color:#F0F0F6;
+}
+div.failed_bank_list div.table_wrapper table tr th.sorting_asc 
+{ 	background-image: url("images/asc.gif");	
+	background-repeat: no-repeat;
+	background-position: 5px center; }
+
+div.failed_bank_list div.table_wrapper table tr th.sorting_desc { 
+	background-image: url("images/desc.gif");	
+	background-repeat: no-repeat;
+	background-position: 5px center; }
+
+div.failed_bank_list div.table_wrapper table tr th.asc,
+div.failed_bank_list div.table_wrapper table tr th.desc { background-color:#003366; }
+
+td.highlight { background-color: whitesmoke !important; }
+
+
+
+/*table thead span.sort-icon {
+  display: inline-block;
+  padding-left: 5px;
+  width: 16px;
+  height: 16px;
+}*/
+
+
+
+
+
+.bank {width:17%;}
+.city {width:7%;}
+.st {width:4%;}
+.cert {width:6%;}
+.ai {width:16%;}
+.closing {width:11%;}
+.updated {width:10%;}
+.type {width:9%;}
+.agreement {width:9%;}
+.tdate {width:11%;}
+
+
+.dataTables_info {
+	width: 50%;
+	float: left;
+	text-align: left;
+	padding-top:5px;
+	margin-top:5px;
+
+
+
+}
+
+.dataTables_paginate {
+	width:50%;
+
+	float: right;
+	text-align: right;
+	padding-top:5px;
+
+
+
+
+}
+
+/* Pagination nested */
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+	height: 19px;
+	width: 19px;
+	margin-left: 3px;
+	float: left;
+}
+
+.paginate_disabled_previous {
+	background-image: url('/images/back_disabled.jpg');
+}
+
+.paginate_enabled_previous {
+	background-image: url('/images/back_enabled.jpg');
+}
+
+.paginate_disabled_next {
+	background-image: url('/images/forward_disabled.jpg');
+}
+
+.paginate_enabled_next {
+	background-image: url('/images/forward_enabled.jpg');
+}
+
+
+
+
+.paging_full_numbers {
+	width: 400px;
+	height: 22px;
+	line-height: 22px;
+	
+	
+}
+
+.paging_full_numbers span.paginate_button,
+ 	.paging_full_numbers span.paginate_active {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+}
+
+.paging_full_numbers span.paginate_button {
+	background-color: #ddd;
+}
+
+.paging_full_numbers span.paginate_button:hover {
+	background-color: #ccc;
+}
+
+.paging_full_numbers span.paginate_active {
+	background-color: #99B3FF;
+}
+.dataTables_filter {
+	width: 50%;
+	float: left;
+
+	text-align: left;
+	font-weight:bold;
+
+}
+
+.dataTables_length {
+	width: 50%;
+	float: right;
+	text-align:right;
+
+	/*margin-bottom:10px;*/
+	/*margin-right:-55px;*/
+	font-weight:bold;
+
+}
+
+
+.dataTables_wrapper {
+	position: relative;
+	min-height: 306px;
+	clear: both;
+	_height: 306px;
+	zoom: 1; /* Feeling sorry for IE */
+}
+
+
+
+@media screen and (max-width: 767px){
+	.dataTables_wrapper .dataTables_info,.dataTables_wrapper .dataTables_paginate, a.data, .dataTables_wrapper .dataTables_length,.dataTables_wrapper .dataTables_filter, .dataTables_wrapper .paging_full_numbers{
+		float:left;text-align:left; width:inherit; margin-top:0.5em; padding:0;overflow:hidden; white-space:nowrap;}
+	
+}
+
+@media (max-width:550px)
+{
+	p.small_screen_warning { display:block; }
+
+}
+
