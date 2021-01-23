@@ -17,7 +17,7 @@
 
 <h2>Artificial Intelligence</h2>
 <p>
-   A one year program desgined for absolute beginner's who are entuistic toward Artificial Intelligence & Data Science. Getting PAKISTAN ready for the new era of computing enalbled by the raise of AI. This course is offered absolutely free by <em><a hrf = "https://www.saylaniwelfare.com/home"> Saylani welfare trust </a></em>.This Open source is repository is for all community who want to be the part of this OPEN SOURCE project </p>
+   A one year program desgined for absolute beginner's who are entuistic toward Artificial Intelligence & Data Science. Getting PAKISTAN ready for the new era of computing enalbled by the raise of AI. This course is offered absolutely free by <em><a href = "https://www.saylaniwelfare.com/home"> Saylani welfare trust </a></em>.This Open source is repository is for all community who want to be the part of this OPEN SOURCE project </p>
    
 <h2>Program Structure</h2>
 <p>    
@@ -65,7 +65,7 @@
 </h1>
 </h1>
 <h1 align="left">
-    <a href="https://github.com/qasim1020/PIAIC-Artifical-Intelligence">
+    <a href="https://github.com/qasim1020/Saylani-A.I">
         <img src="https://github.com/qasim1020/PIAIC-Artificial-Intelligence/blob/master/Images/Micro-services.png">
     </a>   
 </h1>
@@ -91,7 +91,7 @@ If you want to add something then your commit message should be like: <b>added [
 
 <h2>Link</h2>
 <p>
-    link of <a hre = "https://www.saylaniwelfare.com/home">Saylani Welfare trust</a>
+    link of <a href = "https://www.saylaniwelfare.com/home">Saylani Welfare trust</a>
 </p>
 
 
