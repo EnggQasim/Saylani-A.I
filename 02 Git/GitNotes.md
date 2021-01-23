@@ -44,13 +44,13 @@
 - $ git branch -vva (work same as "$ git remote -va" by giving somr more details )
 - $ git branch -d <branchName> (To delete branch )
 - $ git branch -dr origin/<branchName> (to delete branch from Origin/ base repository)
-
+  </br>
 - $ git remote add origin <link> (To set origin where you want to push your data)
 - $ git remote add origin <"clone"> -f
 - $ git push origin master(To push data to GitHub) <b>OR</b> git push origin master -f(To push data to GitHub forefully NOTE: we always try to aviod use of this branch)
 - $ git clone <repoName> (To clone data from GitHUb)
 - $ git pull origin master (To pull file from origin NOTE: origin is the main master directory the store by github in orgin)
-
+  </br>
 - $ git push -u origin <branch> -f (push local brach on server)
 - $ git push --all -u (push all things on remote server)
 - $ git pull --all (pull all data from server)
