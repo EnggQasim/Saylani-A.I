@@ -1,0 +1,35 @@
+>>>Virtual Environment<<<
+
+To install virtual environment : pip install virtualenv
+
+virtualenv project_name
+source project_name/bin/activate
+clear
+ls
+source project_name/Scripts/activate
+which python
+which pip
+pip list
+pip install numpy
+pip install pandas
+pip install --upgrade pip
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip list
+python --version
+pip freeze --local > requirement.txt
+ls
+cat requirement.txt
+deactivate
+which python
+which pip
+pip list
+rm -rf project_name/
+ls
+virtualenv project_name -p python3
+source project_name/Scripts/activate
+pip list
+pip install -r requiremnet.txt
+pip list
+deactivate
